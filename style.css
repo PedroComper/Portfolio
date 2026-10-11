@@ -1,0 +1,128 @@
+:root {
+    --fundo: #fbfaf7;
+    --texto: #222;
+    --suave: #666;
+    --linha: #e3e0d8;
+    --link: #1f4fa3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo: #161616;
+        --texto: #e4e4e4;
+        --suave: #9a9a9a;
+        --linha: #2e2e2e;
+        --link: #8fb4ff;
+    }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.pagina {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 20px 48px;
+}
+
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* Topo */
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.foto {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.subtitulo { margin: 6px 0 0; color: var(--suave); }
+
+.links { margin-top: 12px; display: flex; gap: 18px; }
+
+/* Seções */
+section { margin-bottom: 44px; }
+
+section p { margin: 0 0 14px; }
+
+h2 {
+    margin: 0 0 18px;
+    padding-bottom: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--suave);
+    border-bottom: 1px solid var(--linha);
+}
+
+/* Projetos */
+.item { margin-bottom: 32px; }
+
+.item h3 { margin: 0 0 6px; font-size: 19px; font-weight: 600; }
+
+.contexto { font-weight: 400; color: var(--suave); }
+
+.tecnologias {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--suave);
+}
+
+/* Experiência e formação */
+.linha {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.linha p { margin: 4px 0 0; color: var(--suave); }
+
+.data {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--suave);
+    padding-top: 3px;
+}
+
+@media (max-width: 560px) {
+    .pagina { padding-top: 40px; }
+    .topo { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .foto { width: 80px; height: 80px; }
+    .linha { grid-template-columns: 1fr; gap: 0; }
+}
+
+/* Rodapé */
+.rodape {
+    padding-top: 20px;
+    border-top: 1px solid var(--linha);
+    color: var(--suave);
+    font-size: 16px;
+}
+
+.rodape p { margin: 0; }

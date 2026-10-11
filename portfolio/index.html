@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Lucas Comper</title>
+    <meta name="description" content="Pedro Lucas Oliveira Comper, estudante de Ciência da Computação na UVV. Desenvolvimento back-end com Java e Spring Boot.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pagina">
+
+    <header class="topo">
+        <img src="foto.png" alt="Foto de Pedro Lucas" class="foto" width="96" height="96">
+        <div>
+        <h1>Pedro Lucas Oliveira Comper</h1>
+        <p class="subtitulo">Estudante de Ciência da Computação · Vila Velha, ES</p>
+        <nav class="links">
+            <a href="https://github.com/PedroComper" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/pedro-lucas-oliveira-comper-92b42426b" target="_blank" rel="noopener">LinkedIn</a>
+            <!-- <a href="mailto:pedrolucas.ocomper@gmail.com">E-mail</a> -->
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                Estou no 4º período de Ciência da Computação na Universidade de Vila Velha (UVV), com formatura prevista
+                para 2028. Hoje estudo principalmente desenvolvimento back-end com Java e Spring Boot, e também tenho
+                feito projetos com bancos relacionais e um pouco de front-end com JavaScript.
+            </p>
+            <p>
+                Antes da faculdade trabalhei um ano como Jovem Aprendiz em uma rede de farmácias, na parte administrativa
+                e financeira. Foi onde tive o primeiro contato com sistemas de gestão do lado de quem usa.
+            </p>
+            <p>
+                Estou procurando estágio em desenvolvimento de software ou engenharia de dados.
+            </p>
+        </section>
+
+        <section>
+            <h2>Projetos</h2>
+
+            <article class="item">
+                <h3>
+                    <a href="https://github.com/PedroComper/Barbearia-agendamento-API" target="_blank" rel="noopener">API de agendamentos para barbearia</a>
+                </h3>
+                <p>
+                    API REST para uma barbearia cadastrar serviços e clientes e marcar horários. O sistema não deixa
+                    marcar dois atendimentos no mesmo horário, exige e-mail único por cliente e, quando um agendamento
+                    é cancelado, ele fica registrado no histórico em vez de ser apagado.
+                </p>
+                <p>
+                    Organizei o código em controller, service e repository, com DTOs separando o que entra e o que sai
+                    da API. Os erros passam por um handler global que devolve sempre o mesmo formato de JSON. As regras
+                    principais têm testes unitários com JUnit e Mockito, o banco é versionado com Flyway e a documentação
+                    é gerada pelo Swagger.
+                </p>
+                <p class="tecnologias">Java 25, Spring Boot 4, Spring Data JPA, SQL Server, Flyway, JUnit, Mockito, Swagger</p>
+            </article>
+
+            <article class="item">
+                <h3>Sistema web georreferenciado <span class="contexto">— Inovaweek</span></h3>
+                <p>
+                    Painel para acompanhar equipes em campo num mapa, feito durante a Inovaweek. Usei a biblioteca
+                    Leaflet para mostrar as posições e atualizar os dados no mapa, com layout que funciona no celular.
+                </p>
+                <p class="tecnologias">JavaScript, Leaflet, HTML, CSS</p>
+            </article>
+
+            <article class="item">
+                <h3>Banco de dados da Escola ABC <span class="contexto">— trabalho da faculdade</span></h3>
+                <p>
+                    Modelagem do banco de uma escola fictícia: diagrama entidade-relacionamento, criação das tabelas,
+                    normalização até a 3ª forma normal e consultas SQL em cima do modelo.
+                </p>
+                <p class="tecnologias">SQL, modelagem ER, normalização</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experiência</h2>
+            <div class="linha">
+                <span class="data">out/2022 – set/2023</span>
+                <div>
+                    <strong>Jovem Aprendiz</strong>, Farmácias Carpe Diem
+                    <p>Controle de estoque, relatórios operacionais e acompanhamento de vendas usando o sistema interno de gestão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formação</h2>
+            <div class="linha">
+                <span class="data">2025 – 2028</span>
+                <div><strong>Ciência da Computação</strong>, Universidade de Vila Velha (UVV)</div>
+            </div>
+            <div class="linha">
+                <span class="data">até 2024</span>
+                <div><strong>Ensino Médio Técnico</strong>, Fundação Bradesco</div>
+            </div>
+            <div class="linha">
+                <span class="data">2023</span>
+                <div><strong>Aprendizagem Profissional em Serviços Administrativos</strong>, Senac (510h)</div>
+            </div>
+            <div class="linha">
+                <span class="data">em andamento</span>
+                <div><strong>Curso de Java</strong>, Udemy</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ferramentas</h2>
+            <p>
+                Java, Spring Boot, SQL Server, Maven, Git, JavaScript, HTML e CSS.
+            </p>
+            <p>Inglês intermediário.</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Para falar comigo, o melhor caminho é pelo
+            <a href="https://www.linkedin.com/in/pedro-lucas-oliveira-comper-92b42426b" target="_blank" rel="noopener">LinkedIn</a>.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
